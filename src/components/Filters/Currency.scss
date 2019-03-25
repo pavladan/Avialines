@@ -1,0 +1,28 @@
+.btn__currency{
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #d2d5d6;
+  background-color: #ffffff;
+  color: #2196f3;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  flex: 1 1 auto; 
+  &:first-child{
+    border-radius: 5px 0 0 5px;
+  }
+  &:last-child{
+    border-radius: 0 5px 5px 0;
+  }
+  &:hover{
+    border: 1px solid #64b5f5;
+    background-color: #f2fcff;
+    cursor: pointer;
+  }
+  &.active{
+    border: 1px solid #64b5f5;
+    background-color: #2196f3;
+    color: #ffffff;
+  }
+}

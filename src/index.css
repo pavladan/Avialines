@@ -12,3 +12,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#root{
+  padding: 0 60px;
+  background-color: #f3f7fa;
+}
+
+*{
+  /* box-sizing: border-box; */
+}
