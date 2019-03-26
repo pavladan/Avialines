@@ -5,34 +5,28 @@ import StopQuantity from './StopQuantity';
 
 
 export default class Filters extends PureComponent{
-  constructor(props){
-    super(props);
-    this.currencyList=['RUB','USD','EUR'];
-    this.stopQuantityList=['Все','Без пересадок','1 пересадка', '2 пересадки', '3 пересадки'];
-    this.state={
-      activeCurrency:0,
-      activeQuantity:[0]
-    }
-  }
-  onCurrencyClick= activeCur=>this.setState({
-    activeCurrency: activeCur
-  })
-  onQuantityClick=activeQuan=>this.setState({
-    activeQuantity: this.state.activeQuantity.indexOf(activeQuan)===-1 ? 
-      this.state.activeQuantity.concat(activeQuan) : 
-      this.state.activeQuantity.slice(0,this.state.activeQuantity.indexOf(activeQuan)).concat(this.state.activeQuantity.slice(this.state.activeQuantity.indexOf(activeQuan)+1,this.state.activeQuantity.length))
-  });
+  // constructor(props){
+  //   super(props);
+    
+  // }
+  onCurrencyClick= activeCur=>this.props.updateCurrency(activeCur);
+  onQuantityClick=activeQuan=>{
+    let aQ = this.props.activeQuantity;
+    this.props.updateQuantity(aQ.indexOf(activeQuan)===-1 ? 
+      aQ.concat(activeQuan) : 
+      aQ.slice(0,aQ.indexOf(activeQuan)).concat(aQ.slice(aQ.indexOf(activeQuan)+1,aQ.length))
+    )
+  };
   onQuantityClickOnly=activeQuan=>{
-    this.setState({
-    activeQuantity:[activeQuan]
-  })
-}
+    this.props.updateQuantity([activeQuan]);
+  }
+
   render(){
-      const currencyListli=this.currencyList.map((cur,index) => 
-      <Currency  key={index} currencyName={cur} active={index === this.state.activeCurrency} onButtonClick={this.onCurrencyClick.bind(this,index)}/>
+      const currencyListli=this.props.currencyList.map((cur,index) => 
+      <Currency  key={index} currencyName={cur} active={index === this.props.activeCurrency} onButtonClick={this.onCurrencyClick.bind(this,index)}/>
       )
-      const stopQuantity=this.stopQuantityList.map((title,index)=>
-      <StopQuantity key={index} title={title} active={this.state.activeQuantity.indexOf(index)>=0} onButtonClick={this.onQuantityClick.bind(this,index)} onButtonClickOnly={this.onQuantityClickOnly.bind(this,index)}/>
+      const stopQuantity=this.props.stopQuantityList.map((title,index)=>
+      <StopQuantity key={index} title={title} active={this.props.activeQuantity.indexOf(index)>=0} onButtonClick={this.onQuantityClick.bind(this,index)} onButtonClickOnly={this.onQuantityClickOnly.bind(this,index)}/>
       )
     return (
       <div className="Filters">
