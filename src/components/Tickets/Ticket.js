@@ -8,7 +8,7 @@ export default class Ticket extends Component{
       <div className="Ticket">
         <div className="Ticket__buy">
           <img src={turkish_airlines} alt="turkish_airlines" className="Ticket__logo" />
-          <div className="Ticket__buy-btn btn">Купить за {this.props.ticketInfo.price}Р</div>
+          <div className="Ticket__buy-btn btn">Купить за {Math.ceil(this.props.ticketInfo.price/this.props.currencyK)}{this.props.currencyS}</div>
         </div>
         <div className="Ticket__info">
           <div className="Ticket__info-from">

@@ -28,7 +28,7 @@ class App extends Component {
         <img src={logo} alt="logo" className="App__logo"></img>
         <div className="App__body">
           <Filters updateCurrency={this.updateCurrency} updateQuantity={this.updateQuantity} currencyList={this.currencyList} stopQuantityList={this.stopQuantityList} activeCurrency={this.state.activeCurrency} activeQuantity={this.state.activeQuantity}/>
-          <Tickets tickets={tickets.tickets} activeCurrency={this.state.activeCurrency} activeQuantity={this.state.activeQuantity}/>
+          <Tickets tickets={tickets.tickets} activeCurrency={this.state.activeCurrency} currencyList={this.currencyList} activeQuantity={this.state.activeQuantity}/>
         </div>
       </div>
     )
