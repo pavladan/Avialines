@@ -9,7 +9,19 @@
   pointer-events: none;
   margin: 30px;
 }
+.btn:hover{
+  cursor: pointer;
+}
 
+.App__body{
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 830px){
+  .App__body{
+    flex-direction: column;
+  }
+}
 /* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

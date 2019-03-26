@@ -7,6 +7,10 @@
   font-size: 13px;
   margin: 0 -15px;
   padding: 0 15px;
+  @media screen and (max-width: 830px){
+    margin: 0;
+    flex: 1 1 25%;
+  }
   &.active .stop-quantity__check-box{
     border: 1px solid #2196f3;
     background-color: #f2fcff;  
@@ -25,7 +29,7 @@
     cursor: pointer;
     background-color: #f1fcff;
     & .stop-quantity__btn-only{
-      display: block;
+      visibility: visible;
     }
   }
   &__check-box{
@@ -37,7 +41,7 @@
     margin-right: 10px;
   }
   &__btn-only{
-    display: none;
+    visibility: hidden;
     line-height: 36px;
     margin-left: auto;
     color: #2196f3;

@@ -1,0 +1,7 @@
+.Tickets{
+  margin-left: 20px;
+  flex: 1 1 auto;
+  @media screen and (max-width: 830px){
+    margin: 20px 0 0 0;
+  }
+}

@@ -5,10 +5,6 @@ import StopQuantity from './StopQuantity';
 
 
 export default class Filters extends PureComponent{
-  // constructor(props){
-  //   super(props);
-    
-  // }
   onCurrencyClick= activeCur=>this.props.updateCurrency(activeCur);
   onQuantityClick=activeQuan=>{
     let aQ = this.props.activeQuantity;
@@ -37,7 +33,7 @@ export default class Filters extends PureComponent{
           </div>
         </div>
         <div className="Filters__part">
-          <h3>Количество пересадок</h3>
+          <h3>Количество пересадок <span className="stop-quantity_all btn" onClick={()=>this.props.updateQuantity(this.props.stopQuantityList.map((e,index)=>index))}>Все</span></h3>
           <div className="stop-quantity-list">
             {stopQuantity}
           </div>
