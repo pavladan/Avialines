@@ -1,14 +1,14 @@
 {
-  "main.css": "/static/css/main.f918c00e.chunk.css",
-  "main.js": "/static/js/main.f22dca19.chunk.js",
-  "main.js.map": "/static/js/main.f22dca19.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.fdfcfda2.js",
-  "runtime~main.js.map": "/static/js/runtime~main.fdfcfda2.js.map",
-  "static/js/2.6be924c6.chunk.js": "/static/js/2.6be924c6.chunk.js",
-  "static/js/2.6be924c6.chunk.js.map": "/static/js/2.6be924c6.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.32ef229ee333793eefe346e2c7803fe3.js": "/precache-manifest.32ef229ee333793eefe346e2c7803fe3.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.f918c00e.chunk.css.map": "/static/css/main.f918c00e.chunk.css.map",
-  "static/media/Ticket.scss": "/static/media/airplane.1855bb8e.svg"
+  "main.css": "/Avialines/static/css/main.5bc4b2b1.chunk.css",
+  "main.js": "/Avialines/static/js/main.a6854bdf.chunk.js",
+  "main.js.map": "/Avialines/static/js/main.a6854bdf.chunk.js.map",
+  "runtime~main.js": "/Avialines/static/js/runtime~main.8bc133d1.js",
+  "runtime~main.js.map": "/Avialines/static/js/runtime~main.8bc133d1.js.map",
+  "static/js/2.6be924c6.chunk.js": "/Avialines/static/js/2.6be924c6.chunk.js",
+  "static/js/2.6be924c6.chunk.js.map": "/Avialines/static/js/2.6be924c6.chunk.js.map",
+  "index.html": "/Avialines/index.html",
+  "precache-manifest.41de1d36aaada1a606617b5e81aead4a.js": "/Avialines/precache-manifest.41de1d36aaada1a606617b5e81aead4a.js",
+  "service-worker.js": "/Avialines/service-worker.js",
+  "static/css/main.5bc4b2b1.chunk.css.map": "/Avialines/static/css/main.5bc4b2b1.chunk.css.map",
+  "static/media/Ticket.scss": "/Avialines/static/media/airplane.1855bb8e.svg"
 }
